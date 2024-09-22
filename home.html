@@ -9,7 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main class="mx-6">
+    <main class="mx-6 artboard phone-2 mx-auto">
+        <!-- balance box-->
         <section class="flex justify-between my-8">
             <div class="flex gap-5">
                 <img src="payoo.png" class="w-[55px]">
@@ -80,6 +81,7 @@
                 </div>
             </div>
         </section>
+        <!--add money section-->
         <section class="my-5">
             <h3>Add Money</h3>
             <form class="card-body">
@@ -129,9 +131,62 @@
                 </div>
               </form>
         </section>
+        <!--end-->
+        <!--cash out section-->
+        <section class="my-5 hidden">
+            <h3>Cash Out</h3>
+            <form class="card-body">
+                <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Select A Bank</span>
+                    </label>
+                    <select class="input input-bordered" required>
+                        <option>Select bank</option>
+                        <option value="">
+                            Bank-1
+                        </option>
+                        <option value="">
+                            Bank-2
+                        </option>
+                        <option value="">
+                            Bank-3
+                        </option>
+                        <option value="">
+                            Bank-4
+                        </option>
+                    </select>
+                  </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-bold">Bank Account Number</span>
+                  </label>
+                  <input type="text" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Amount to Cash Out</span>
+                    </label>
+                    <input type="text" placeholder="Add Amount to withdraw" class="input input-bordered" id="input-cashout-money" required />
+                  </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-bold">Pin Number</span>
+                  </label>
+                  <input type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" id="cashout-pin-num" required />
+                  <label class="label">
+                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary" id="btn-cashout-money">Cashout</button>
+                </div>
+              </form>
+        </section>
+        <!--end-->
     </main>
 
     <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
 </body>
 </html>
