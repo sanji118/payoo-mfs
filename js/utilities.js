@@ -12,6 +12,8 @@ function getTextFieldValueById(id){
 }
 
 function showSectionById(id){
+    document.getElementById('cashout-form').classList.add('hidden');
     document.getElementById('add-money-form').classList.add('hidden');
+    document.getElementById('transaction-form').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
 }
